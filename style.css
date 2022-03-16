@@ -1,0 +1,283 @@
+:root {
+  /* Colors variables */
+  --cl-text-light-primary: #f9faf8;
+  --cl-text-mid-primary: #cfcfcf;
+  --cl-text-dark-primary: #1f2937;
+  --cl-cta: #3882f6;
+  --bg-dark: #1f2937;
+  --bg-light: #f9faf8;
+  --bg-mid: #e5e7eb;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: roboto, sans;
+}
+
+header,
+footer {
+  background-color: var(--bg-dark);
+  color: #f9faf8;
+  height: 60px;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.solid-border {
+  border: 2px solid;
+}
+
+/* ################## */
+/* # NAV BAR STYLES # */
+/* ################## */
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: 700;
+  width: 50%;
+}
+
+.nav-menu {
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.nav-item {
+  text-align: right;
+  width: 30%;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--cl-text-mid-primary);
+  font-weight: 200;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+/* ####################### */
+/* # HERO SECTION STYLES # */
+/* ####################### */
+
+.hero {
+  height: 500px;
+  background-color: var(--bg-dark);
+}
+
+.hero .d-flex {
+  align-items: center;
+}
+
+.hero-text {
+  margin-right: 2rem;
+  width: 50%;
+}
+
+.hero-text .main-text {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--cl-text-light-primary);
+  padding-bottom: 0.5rem;
+}
+
+.hero-text .secondary-text {
+  font-size: 18px;
+  color: var(--cl-text-mid-primary);
+  padding-bottom: 0.5rem;
+}
+
+.hero-img {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* ######################## */
+/* # CARDS SECTION STYLES # */
+/* ######################## */
+
+.cards-container {
+  height: 600px;
+  background-color: var(--bg-light);
+}
+
+.cards-container .container {
+  align-items: space-between;
+  justify-content: space-around;
+}
+
+.card-title h1 {
+  font-size: 36px;
+  font-weight: 900;
+  padding: 2em;
+  text-align: center;
+}
+
+.cards {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 20%;
+}
+
+.card-pic {
+  border: 5px solid var(--cl-cta);
+  align-self: flex-start;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 16px;
+  padding: 0.5em;
+}
+
+/* ######################## */
+/* # QUOTE SECTION STYLES # */
+/* ######################## */
+
+.quote {
+  background-color: var(--bg-mid);
+  height: 300px;
+}
+
+.quote-box {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.quote-text {
+  color: var(--cl-text-dark-primary);
+  font-size: 36px;
+  font-weight: 100;
+  font-style: oblique;
+}
+
+.quote-author {
+  font-size: 20px;
+  font-weight: 800;
+  align-self: flex-end;
+}
+
+.quote-author::before {
+  content: "-";
+}
+
+/* ######################## */
+/* #  CTA  SECTION STYLES # */
+/* ######################## */
+
+.cta-sec {
+  background-color: var(--bg-light);
+  height: 300px;
+}
+
+.cta-sec .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-contain {
+  background-color: var(--cl-cta);
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.cta-text {
+  flex-grow: 1;
+  padding-inline: 5em;
+}
+
+.cta-text h2 {
+  color: var(--cl-text-light-primary);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.cta-text p {
+  color: var(--cl-text-mid-primary);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.cta-box {
+  padding-inline: 7em;
+}
+
+.cta {
+  color: var(--cl-text-light-primary);
+  background: var(--cl-cta);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.5em;
+  padding: 0.5em 2em;
+  display: inline-block;
+}
+
+.copy {
+  background-color: var(--bg-dark);
+}
+
+.copy .container {
+  align-items: center;
+  justify-content: center;
+}
+
+.copy .container p {
+  color: var(--cl-text-mid-primary);
+  font-size: 15px;
+  font-weight: 300;
+  padding: 2em;
+}
